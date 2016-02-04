@@ -1,22 +1,31 @@
-#StrongNode & Mongodb with Ubuntu precise 64 VirtualBox - Vagrant
+# StrongLoop Workspace for Windows
+Saggaf Arsyad <saggaf@area54labs.net>
 
-###How to Use
-1. Download and install VirtualBox by [clicking here](https://www.virtualbox.org/wiki/Downloads)
-2. Download and install Vagrant by [clicking here](http://downloads.vagrantup.com/)
-3. Clone this repository.
-4. cd vagrant-strongnode-mongodb/
-5. vagrant up
+### Requirements
+1. [VirtualBox] (https://www.virtualbox.org/wiki/Downloads)
+2. [Vagrant] (http://downloads.vagrantup.com/)
+3. [Git for Windows](https://git-scm.com/download/win)
 
-###After Vagrant Box is up
+### How to Use
+1. Open git-bash in Administrator Mode
+2. `git clone `
+3. `cd strongloop-workspace`
+4. `./start.sh`
+
+### After Vagrant Box is up
 1. Vagrantfile configures private network at http://33.33.33.10/
-2. place your StrongLoop node apps in vagrant-strongnode-mongodb/strongnode-app-folder ( such as vagrant-strongnode-mongodb/strongnode-app-folder/myApp/app.js)
-3. login into the machine via 'vagrant ssh'
-4. from cli start your node app with 'slc run /var/strongnode-app-folder/myApp/app.js'
+2. Place your StrongLoop node apps in workspace folder
 
-###Further Reading
-- [Strong Node ](http://StrongLoop.com)
+### ConEmu Tasks
+1. Task parameters
+
+    /dir "<path_to_repo>"`
+
+2. Commands
+
+    "<path_to_git>\bin\bash.exe" --login -i "<path_to_repo>\start.sh" -new_console:t:Strongloop -new_console:a
+
+### Further Reading
+- [StrongLoop](http://StrongLoop.com)
 - [Vagrant Documentation](http://docs.vagrantup.com/v2/getting-started/index.html)
 - [MongoDB](http://mongodb.org)
-
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/7ca7c2f6aef75c2cb0d821319461978b "githalytics.com")](http://githalytics.com/strongloop-community/vagrant-strongnode-mongodb)
-
