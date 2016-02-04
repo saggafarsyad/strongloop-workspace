@@ -29,7 +29,7 @@ if [ ! -e "/var/workspace" ]; then
 
 	# Install StrongLoop
 	echo "Installing strongloop..."
-	npm install -g strongloop > /dev/null
+	npm install -g strongloop --unsafe-perm
 	echo "done."
 
 	# Symlink our host node-apps to the guest /var/node-apps folder
