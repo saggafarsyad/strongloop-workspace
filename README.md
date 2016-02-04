@@ -16,6 +16,11 @@ Saggaf Arsyad <saggaf@area54labs.net>
 1. Vagrantfile configures private network at `http://33.33.33.10/`
 2. Place your StrongLoop node apps in workspace folder
 
+## What's Inside
+1. Node.js 4.x.x LTS
+2. MongoDB
+3. StrongLoop
+
 ### ConEmu Tasks
 1. Task parameters
 
